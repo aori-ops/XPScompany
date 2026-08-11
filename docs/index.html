@@ -124,7 +124,13 @@
   }
   .nav-links a{color:var(--muted); text-decoration:none; transition:color .25s ease;}
   .nav-links a:hover{color:var(--white);}
-  @media (max-width:768px){ .nav-links{display:none;} }
+  @media (max-width:768px){
+    .nav-links{display:none;}
+    .nav-inner{
+      grid-template-columns: 1fr auto;
+      padding: 0 16px;
+    }
+  }
 
   /* HERO */
   .hero{
@@ -682,9 +688,9 @@
     <div class="container">
 
         <h1>
-            <span data-lang="hero.title1">Título grande e</span>
-            <span class="accent" data-lang="hero.title2">chamativo</span>
-            <span data-lang="hero.title3">vai aqui</span>
+            <span data-lang="hero.title1">Alcance seu</span>
+            <span class="accent" data-lang="hero.title2">Rank ideal</span>
+            <span data-lang="hero.title3">Sem esforço</span>
         </h1>
     <p class="sub" data-lang="hero.subtitle">Pequeno subtítulo explicando a proposta do produto digital em uma ou duas frases curtas e diretas.</p>
     <div class="hero-actions">
@@ -710,7 +716,7 @@
         <div class="card-image has-img" style="background-image:url('../assets/marvel_rivals.jpg');"></div>
         <div class="card-body">
           <h3 data-lang="products.marvel_rivals">Marvel Rivals</h3>
-          <p data-lang="products.marvel_rivals_description">Texto descritivo curto sobre este produto digital, explicando seu valor de forma simples.</p>
+          <p data-lang="products.marvel_rivals_description">Realização de Boost de modo normal, competitivo e OAA + eternidade, bem como conquistas modo PVE, zumbis, etc....</p>
           <button type="button" class="btn btn-primary btn-block" onclick="abrirModalContato()" data-lang="products.buy_now">Comprar</button>
         </div>
       </div>
@@ -719,8 +725,8 @@
         <div class="card-image has-img" style="background-image:url('../assets/overwatch.jpg');"></div>
         <div class="card-body">
           <h3 data-lang="products.overwatch">Overwatch 2</h3>
-          <p data-lang="products.overwatch_description">Texto descritivo curto sobre este pSroduto digital, explicando seu valor de forma simples.</p>
-          <button type="button" class="btn btn-primary btn-block" onclick="abrirModalContato()" data-lang="products.Sbuy_now">Comprar</button>
+          <p data-lang="products.overwatch_description">Texto descritivo curto sobre este produto digital, explicando seu valor de forma simples.</p>
+          <button type="button" class="btn btn-primary btn-block" onclick="abrirModalContato()" data-lang="products.buy_now">Comprar</button>
         </div>
       </div>
 
